@@ -11,8 +11,12 @@ html {
     Variables
 ============= */
 :root {
-  --black: #000000;
+  --black: #051114;
   --white: #ffffff;
+  --purple: #5319A6;
+  --light-blue: #42B4EE;
+  --grey: #051114;
+  --light-purple: #7635D4;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,9 +335,28 @@ template {
 /* =============
     Base
 ============= */
+#validation {
+  margin-top: 66px;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -366,3 +389,17 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  color: var(--white);
+}
+footer #footer-top {
+  background-color: var(--black);
+  padding: 100px 0;
+}
+footer section h2 {
+  margin-bottom: 30px;
+}
+footer #footer-bottom {
+  background-color: var(--black);
+  padding: 30px 0;
+}

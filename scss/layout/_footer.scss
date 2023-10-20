@@ -1,3 +1,21 @@
 /* =============
     Footer
 ============= */
+footer{
+    color: var(--white);
+    #footer-top{
+        background-color: var(--black);
+        padding: 100px 0;
+    }
+
+    section{
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+
+    #footer-bottom{
+        background-color: var(--black);
+        padding: 30px 0
+    }
+}
