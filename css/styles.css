@@ -335,6 +335,10 @@ template {
 /* =============
     Base
 ============= */
+#validation {
+  margin-top: 66px;
+}
+
 /* =============
     Typography
 ============= */
