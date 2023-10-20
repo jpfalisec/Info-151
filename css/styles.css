@@ -338,6 +338,10 @@ body {
   background-color: var(--purple);
 }
 
+#validation {
+  margin-top: 60px;
+}
+
 /* =============
     Typography
 ============= */
