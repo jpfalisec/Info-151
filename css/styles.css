@@ -16,6 +16,7 @@ html {
   --purple: #5319A6;
   --light-blue: #42B4EE;
   --grey: #051114;
+  --light-purple: #7635D4;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -487,10 +488,21 @@ ul .bordered-li {
   background: #FFF;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: inline-block;
+  background: rgb(2, 0, 36);
+  background: -webkit-gradient(linear, left top, right top, color-stop(12%, rgb(83, 25, 166)), color-stop(12%, rgb(83, 25, 166)), to(rgb(255, 255, 255)));
+  background: linear-gradient(90deg, rgb(83, 25, 166) 12%, rgb(83, 25, 166) 12%, rgb(255, 255, 255) 100%);
+}
+ul .bordered-li h2 {
+  color: var(--white);
+}
+ul .bordered-li img {
+  color: var(--white);
+}
+ul .bordered-li h3 {
+  color: var(--white);
 }
 
-li h2 {
+li {
   padding: 30px;
   border-radius: 10px;
   background: #FFF;
