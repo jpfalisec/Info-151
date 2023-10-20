@@ -1,3 +1,22 @@
 /* =============
     Header
 ============= */
+header{
+    nav{
+        ul{
+            a{
+               
+            }
+        }
+
+        #trial{
+            a{
+                border-radius: 5px;
+                padding: 30px 15px;
+                background-color: var(--blue);
+                color: var(--white)
+                
+            }
+        }
+    }
+}

@@ -359,6 +359,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  border-radius: 5px;
+  padding: 30px 15px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 /* =============
     Forms
 ============= */
@@ -385,9 +396,19 @@ textarea {
 /* =============
     Header
 ============= */
+header nav #trial a {
+  border-radius: 5px;
+  padding: 30px 15px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 146px;
+}
