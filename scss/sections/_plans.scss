@@ -2,5 +2,53 @@
     Plans
 ============= */
 #plans{
-    margin-top: 60x;
+
+    div{
+        h1{
+            color: var(--black);
+        }
+    }
+
+    div{
+        span{
+            label{
+
+            }
+            span{
+                color: var(--grey(10%));
+            }
+        }
 }
+    }
+    
+
+    ul{
+        li{
+            padding: 30px;
+            border: 1px transparent var(--grey);
+            border-radius: 10px;
+
+            display: inline-block;
+            h2{
+                img{
+                    h3{
+                        p{
+                            button{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul{
+        .bordered-li{
+            padding: 30px;
+            border: 1px solid var(--grey);
+            border-radius: 10px;
+
+            display: inline-block;
+        }
+    }

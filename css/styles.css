@@ -15,6 +15,7 @@ html {
   --white: #ffffff;
   --purple: #5319A6;
   --light-blue: #42B4EE;
+  --grey: #051114;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -464,6 +465,22 @@ input:checked + .slider:before {
 /* =============
     Plans
 ============= */
-#plans {
-  margin-top: 60x;
+#plans div h1 {
+  color: var(--black);
+}
+#plans div span span {
+  color: var(--grey(10%));
+}
+
+ul li {
+  padding: 30px;
+  border: 1px transparent var(--grey);
+  border-radius: 10px;
+  display: inline-block;
+}
+ul .bordered-li {
+  padding: 30px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  display: inline-block;
 }
