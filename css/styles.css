@@ -345,9 +345,15 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+  font-weight: 600;
+  font-size: 62px;
 }
 
 p {
@@ -368,6 +374,8 @@ button {
 }
 
 .blue-btn {
+  font-size: 20px;
+  font-weight: 500;
   border-radius: 5px;
   padding: 30px 15px;
   background-color: var(--blue);
@@ -400,6 +408,9 @@ textarea {
 /* =============
     Header
 ============= */
+header nav ul a {
+  font-size: rem-cac(18);
+}
 header nav #trial a {
   border-radius: 5px;
   padding: 30px 15px;
@@ -415,4 +426,12 @@ header nav #trial a {
 ============= */
 #hero {
   margin-top: 146px;
+}
+
+section p {
+  font-size: 18px;
+}
+section ul li {
+  font-size: 20px;
+  font-weight: 500;
 }
