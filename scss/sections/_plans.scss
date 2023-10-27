@@ -3,9 +3,29 @@
 ============= */
 #plans{
 
-    div{
+    }
+    #plans-intro{
+        text-align: center;
         h1{
             color: var(--black);
+            margin: 180px 0 30px;
+            font-size: rem-calc(44);
+            font-weight: 600;
+        }
+        span{
+            color: var(--black);
+            font-size: rem-calc(22);
+            font-weight: 500;
+            padding: 13px;
+        }
+        label{
+            width: 83px;
+            height: 33px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            border: 1px solid #42B4EE;
+            background: rgba(66, 180, 238, 0.20);
+            margin-bottom: 65px;
         }
     }
 
@@ -19,11 +39,14 @@
             }
         }
 }
-    }
+    
     
 
     ul{
         li{
+            width: 360px;
+            height: 480px;
+            flex-shrink: 0;
             padding: 30px;
             border-radius: 10px;
             background: #FFF;

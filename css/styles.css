@@ -339,12 +339,41 @@ template {
   margin-top: 66px;
 }
 
+#validation {
+  margin-top: 50px;
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+}
+
+span {
+  color: #051114;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 33px */
+}
+
+span {
+  color: #051114;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 33px */
 }
 
 p {
@@ -470,14 +499,41 @@ input:checked + .slider:before {
 /* =============
     Plans
 ============= */
-#plans div h1 {
-  color: var(--black);
+#plans-intro {
+  text-align: center;
 }
-#plans div span span {
+#plans-intro h1 {
+  color: var(--black);
+  margin: 180px 0 30px;
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#plans-intro span {
+  color: var(--black);
+  font-size: 1.375rem;
+  font-weight: 500;
+  padding: 13px;
+}
+#plans-intro label {
+  width: 83px;
+  height: 33px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #42B4EE;
+  background: rgba(66, 180, 238, 0.2);
+  margin-bottom: 65px;
+}
+
+div span span {
   color: var(--grey(10%));
 }
 
 ul li {
+  width: 360px;
+  height: 480px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding: 30px;
   border-radius: 10px;
   background: #FFF;

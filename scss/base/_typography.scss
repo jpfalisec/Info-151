@@ -1,9 +1,33 @@
 /* =============
     Typography
 ============= */
+body{
+    font-family: 'Inter', sans-serif;
+}
 h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
+}
+span{
+    color: #051114;
+text-align: center;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 33px */
+}
+label{
+
+}
+span{
+    color: #051114;
+text-align: center;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 33px */
 }
 p{
     margin: 0;
