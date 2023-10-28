@@ -6,16 +6,58 @@ footer{
     #footer-top{
         background-color: var(--black);
         padding: 100px 0;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        margin-bottom: 33px;
+        
+        #icons{
+            margin-top: 30px;
+            display: inline-block;
+            list-style: none;
+
+        }
+    }
+    #links{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+        margin-top: 100px;
+    }
+    #usefull{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+        margin-top: 100px;
     }
 
     section{
         h2{
             margin-bottom: 30px;
+            width: 288px;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 160%; /* 28.8px */
         }
     }
 
     #footer-bottom{
         background-color: var(--black);
-        padding: 30px 0
+        padding: 30px;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 28.8px */
     }
 }
