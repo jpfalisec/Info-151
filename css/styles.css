@@ -500,10 +500,12 @@ header #trial a {
 
 section h1 {
   margin-top: 25px;
+  color: var(--white);
 }
 section p {
   font-size: 18px;
   margin-top: 25px;
+  color: var(--white);
 }
 section ul li {
   font-size: 20px;
