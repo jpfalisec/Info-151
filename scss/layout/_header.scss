@@ -5,12 +5,23 @@ header{
     padding: 40px;
     border-radius: mixed;
     margin-top: 40px;
-    nav{
-        ul{
-            a{
-               font-size: rem-cac(18);
-            }
+    
+        display: grid;
+        grid-template-columns: 30% auto;
+
+        #logo-container{
+            display: flex;
+            align-items: center;
         }
+        #home{
+            display: grid;
+            display: flex;
+            grid-template-columns: 10% auto;
+            align-items: center;
+        }
+        
+
+        
 
         #trial{
             a{
@@ -22,4 +33,3 @@ header{
             }
         }
     }
-}

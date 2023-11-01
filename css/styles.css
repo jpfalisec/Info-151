@@ -337,6 +337,18 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
 
 #validation {
   margin-top: 245px;
@@ -376,6 +388,7 @@ button {
 }
 
 .blue-btn {
+  list-style: none;
   font-size: 20px;
   font-weight: 500;
   border-radius: 5px;
@@ -409,6 +422,7 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 nav ul {
@@ -418,6 +432,9 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -439,11 +456,32 @@ header {
   padding: 40px;
   border-radius: mixed;
   margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
 }
-header nav ul a {
-  font-size: rem-cac(18);
+header #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header nav #trial a {
+header #home {
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 10% auto;
+  grid-template-columns: 10% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #trial a {
   border-radius: 5px;
   padding: 30px 15px;
   background-color: var(--blue);
@@ -470,4 +508,5 @@ section p {
 section ul li {
   font-size: 20px;
   font-weight: 500;
+  list-style: none;
 }

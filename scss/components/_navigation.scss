@@ -4,12 +4,14 @@
 
 a{
     text-decoration: none;
+    display: inline-block;
 }
 
 nav{
     ul{
         display: flex;
         justify-content: center;
+        align-items: center;
         li{
             list-style: none;
             margin-left: 40px;
@@ -21,7 +23,7 @@ nav{
             }
 
             a:hover, a:active{
-
+                
             }
 
             a.selected{
