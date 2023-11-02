@@ -496,6 +496,10 @@ header #trial a {
 ============= */
 #hero {
   margin-top: 146px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% auto;
+  grid-template-columns: 33% auto;
 }
 
 section h1 {
@@ -511,4 +515,10 @@ section ul li {
   font-size: 20px;
   font-weight: 500;
   list-style: none;
+}
+
+aside img {
+  width: 100%;
+  margin-top: -50px;
+  margin-left: 50px;
 }
