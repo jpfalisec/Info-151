@@ -335,13 +335,30 @@ template {
 /* =============
     Base
 ============= */
-#validation {
-  margin-top: 66px;
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-content .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
 }
 
 #validation {
   margin-top: 50px;
   text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -529,6 +546,13 @@ div span span {
   color: var(--grey(10%));
 }
 
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 ul li {
   width: 360px;
   height: 480px;
@@ -539,7 +563,9 @@ ul li {
   background: #FFF;
   -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
           box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
-  display: inline-block;
+}
+ul li div h2 {
+  text-align: center;
 }
 ul .bordered-li {
   padding: 30px;
@@ -554,12 +580,29 @@ ul .bordered-li {
 }
 ul .bordered-li h2 {
   color: var(--white);
+  text-align: center;
 }
 ul .bordered-li img {
+  padding: 10px;
   color: var(--white);
+  display: block;
+  margin: 0 auto;
 }
 ul .bordered-li h3 {
+  padding: 10px;
   color: var(--white);
+  text-align: center;
+}
+ul .bordered-li p {
+  padding: 10px;
+  margin: 0 30%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+ul .bordered-li button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 li {
@@ -568,4 +611,28 @@ li {
   background: #FFF;
   -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
           box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+li h2 {
+  text-align: center;
+}
+li img {
+  padding: 10px;
+  color: var(--white);
+  display: block;
+  margin: 0 auto;
+}
+li h3 {
+  padding: 10px;
+  text-align: center;
+}
+li p {
+  padding: 10px;
+  margin: 0 30%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+li button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
 }
