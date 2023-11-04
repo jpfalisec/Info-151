@@ -444,8 +444,8 @@ footer #footer-top {
   font-weight: 400;
   line-height: 160%; /* 25.6px */
   margin-bottom: 33px;
-  -ms-grid-columns: auto 1170px auto;
-  grid-template-columns: auto 1170px auto;
+  -ms-grid-columns: auto 1600px auto;
+  grid-template-columns: auto 1600px auto;
       grid-template-areas: ". ftgi .";
 }
 footer #footer-top #footer-top-grid-item {
@@ -521,8 +521,8 @@ footer #footer-bottom {
   line-height: 160%; /* 28.8px */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1170px auto;
-  grid-template-columns: auto 1170px auto;
+  -ms-grid-columns: auto 1600px auto;
+  grid-template-columns: auto 1600px auto;
       grid-template-areas: ". fbgi .";
 }
 footer #footer-bottom #footer-bottom-grid-item {
