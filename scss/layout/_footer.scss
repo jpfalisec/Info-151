@@ -13,11 +13,35 @@ footer{
         font-weight: 400;
         line-height: 160%; /* 25.6px */
         margin-bottom: 33px;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas: ". ftgi .";
+
+        #footer-top-grid-item{
+            grid-area: ftgi;
+
+            display: grid;
+            grid-template-columns: 40% 20% 20% auto;
+        }
+
+        section{
+            img{
+                margin-top: 90px;
+            }
+            p{
+                padding-right: 40px;
+                margin-top: 33px;
+            }
+        }
         
         #icons{
-            margin-top: 30px;
-            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            display: flex;
             list-style: none;
+            transition: 0.25s;
+            li{
+                margin-right: 16px;
+            }
 
         }
     }
@@ -27,7 +51,9 @@ footer{
         font-size: 18px;
         font-weight: 400;
         line-height: 160%; /* 28.8px */
+        margin-bottom: 10px;
         margin-top: 100px;
+        transition: 0.25s;
     }
     #usefull{
         color: #FFF;
@@ -35,7 +61,9 @@ footer{
         font-size: 18px;
         font-weight: 400;
         line-height: 160%; /* 28.8px */
+        margin-bottom: 10px;
         margin-top: 100px;
+        transition: 0.25s;
     }
 
     section{
@@ -47,6 +75,7 @@ footer{
             font-size: 18px;
             font-weight: 400;
             line-height: 160%; /* 28.8px */
+            transition: 0.25s;
         }
     }
 
@@ -59,5 +88,17 @@ footer{
         font-style: normal;
         font-weight: 500;
         line-height: 160%; /* 28.8px */
+        display: grid;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas: ". fbgi .";
+
+        #footer-bottom-grid-item{
+            grid-area: fbgi;
+            display: flex;
+
+            #copyright{
+                margin-right: 15px;
+            }
+        }
     }
 }
