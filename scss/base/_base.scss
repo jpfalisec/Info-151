@@ -1,7 +1,13 @@
 /* =============
     Base
 ============= */
-
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
 
 #validation{
     text-align: center;

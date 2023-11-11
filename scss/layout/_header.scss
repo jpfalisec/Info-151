@@ -4,10 +4,11 @@
 header{
     padding: 12px 24px;
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
     "logo burger"
-    "nav nav nav";
+    "nav nav";
+    
 
     #logo-container{
         display: flex;
@@ -24,6 +25,5 @@ header{
 
     nav{
         grid-area: nav;
-
     }
 }
