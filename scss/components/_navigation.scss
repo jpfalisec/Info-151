@@ -59,6 +59,12 @@ nav{
                 background-color: var(--grey);
                 color: var(--black);
             }
+
+            .button-container button{
+                display: inline-block;
+                text-align: center;
+                margin: 5px;
+            }
         }
     }
 }
