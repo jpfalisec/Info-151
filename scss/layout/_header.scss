@@ -26,4 +26,8 @@ header{
     nav{
         grid-area: nav;
     }
+
+    #button-container{
+        display: flex;
+    }
 }

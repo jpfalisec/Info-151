@@ -413,18 +413,7 @@ nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-nav ul li a:link, nav ul li a:visited {
-  padding: 10px;
-  display: inline-block;
-  margin-bottom: 26px;
-  color: var(--black);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-nav ul li a:hover, nav ul li a:active {
-  color: var(--grey);
-}
-nav ul li .Sign-btn {
+nav ul .Sign-btn {
   background-color: var(--blue);
   color: var(--white);
   border-radius: 8px;
@@ -435,11 +424,11 @@ nav ul li .Sign-btn {
   transition: 0.25s;
   cursor: pointer;
 }
-nav ul li .Sign-btn:hover {
+nav ul .Sign-btn:hover {
   background-color: var(--grey);
   color: var(--black);
 }
-nav ul li .SignUp-btn {
+nav ul .SignUp-btn {
   background-color: var(--white);
   color: var(--blue);
   border-radius: 8px;
@@ -448,14 +437,20 @@ nav ul li .SignUp-btn {
   font-weight: 400;
   cursor: pointer;
 }
-nav ul li .SignUp-btn:hover {
+nav ul .SignUp-btn:hover {
   background-color: var(--grey);
   color: var(--black);
 }
-nav ul li .button-container button {
+nav ul li a:link, nav ul li a:visited {
+  padding: 10px;
   display: inline-block;
-  text-align: center;
-  margin: 5px;
+  margin-bottom: 26px;
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--grey);
 }
 
 /* =============
@@ -499,6 +494,11 @@ header nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+}
+header #button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* =============
