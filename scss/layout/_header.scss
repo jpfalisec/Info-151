@@ -12,6 +12,14 @@ header{
     @include md{
         grid-template-columns: 80% auto 2%;
     }
+
+    @include xl{
+        grid-template-columns: 25% 25% auto;
+        grid-template-areas: 
+        "logo button nav";
+
+        padding: 24px 48px;
+    }
     
 
     #logo-container{
@@ -20,18 +28,16 @@ header{
         grid-area: logo;
     }
 
-    .button-container{
-        display: flex;
-        grid-area: button;
-        align-items: center;
-    }
-
     #burger-container{
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       grid-area: burger;
-    }
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+ 
+        @include xl{
+         display: none;
+        }
+     }
 
     nav{
         grid-area: nav;
@@ -39,6 +45,13 @@ header{
         @include md{
             display: none;
         }
+        
+    }
+
+    .button-container{
+        display: flex;
+        grid-area: button;
+        align-items: center;
     }
 
 }
