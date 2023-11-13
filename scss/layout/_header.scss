@@ -35,6 +35,10 @@ header{
 
     nav{
         grid-area: nav;
+
+        @include md{
+            display: none;
+        }
     }
 
 }

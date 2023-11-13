@@ -517,6 +517,11 @@ header nav {
   -ms-grid-column-span: 3;
   grid-area: nav;
 }
+@media (min-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 
 /* =============
     Footer
