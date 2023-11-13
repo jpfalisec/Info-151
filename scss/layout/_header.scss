@@ -4,16 +4,26 @@
 header{
     padding: 12px 24px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% auto 8%;
     grid-template-areas: 
-    "logo burger"
-    "nav nav";
+    "logo button burger"
+    "nav nav nav";
+
+    @include md{
+        grid-template-columns: 80% auto 2%;
+    }
     
 
     #logo-container{
         display: flex;
         align-items: center;
         grid-area: logo;
+    }
+
+    .button-container{
+        display: flex;
+        grid-area: button;
+        align-items: center;
     }
 
     #burger-container{
@@ -27,7 +37,4 @@ header{
         grid-area: nav;
     }
 
-    #button-container{
-        display: flex;
-    }
 }

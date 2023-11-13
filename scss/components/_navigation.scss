@@ -6,6 +6,38 @@ a{
     text-decoration: none;
 }
 
+.Sign-btn{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 400;
+    border: none;
+    transition: 0.25s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.Sign-btn:hover{
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+.SignUp-btn{
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    padding: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.SignUp-btn:hover{
+    background-color: var(--grey);
+    color: var(--black);
+}
+
 nav{
     margin-top: 22px;
     padding-top: 27px;
@@ -16,36 +48,7 @@ nav{
         flex-direction: column;
         align-items: flex-end;
 
-        .Sign-btn{
-            background-color: var(--blue);
-            color: var(--white);
-            border-radius: 8px;
-            padding: 12px;
-            font-weight: 400;
-            border: none;
-            transition: 0.25s;
-            cursor: pointer;
-        }
-
-        .Sign-btn:hover{
-            background-color: var(--grey);
-            color: var(--black);
-        }
-
-        .SignUp-btn{
-            background-color: var(--white);
-            color: var(--blue);
-            border-radius: 8px;
-            border: 1px solid var(--blue);
-            padding: 12px;
-            font-weight: 400;
-            cursor: pointer;
-        }
-
-        .SignUp-btn:hover{
-            background-color: var(--grey);
-            color: var(--black);
-        }
+        
 
         li{
             a:link, a:visited{

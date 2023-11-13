@@ -393,6 +393,39 @@ a {
   text-decoration: none;
 }
 
+.Sign-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 400;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Sign-btn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.SignUp-btn {
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  padding: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.SignUp-btn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
 nav {
   margin-top: 22px;
   padding-top: 27px;
@@ -413,34 +446,6 @@ nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-nav ul .Sign-btn {
-  background-color: var(--blue);
-  color: var(--white);
-  border-radius: 8px;
-  padding: 12px;
-  font-weight: 400;
-  border: none;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  cursor: pointer;
-}
-nav ul .Sign-btn:hover {
-  background-color: var(--grey);
-  color: var(--black);
-}
-nav ul .SignUp-btn {
-  background-color: var(--white);
-  color: var(--blue);
-  border-radius: 8px;
-  border: 1px solid var(--blue);
-  padding: 12px;
-  font-weight: 400;
-  cursor: pointer;
-}
-nav ul .SignUp-btn:hover {
-  background-color: var(--grey);
-  color: var(--black);
-}
 nav ul li a:link, nav ul li a:visited {
   padding: 10px;
   display: inline-block;
@@ -460,9 +465,15 @@ header {
   padding: 12px 24px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-  grid-template-columns: 50% 50%;
-      grid-template-areas: "logo burger" "nav nav";
+  -ms-grid-columns: 50% auto 8%;
+  grid-template-columns: 50% auto 8%;
+      grid-template-areas: "logo button burger" "nav nav nav";
+}
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 80% auto 2%;
+    grid-template-columns: 80% auto 2%;
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
@@ -475,9 +486,20 @@ header #logo-container {
           align-items: center;
   grid-area: logo;
 }
-header #burger-container {
+header .button-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: button;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,13 +514,8 @@ header #burger-container {
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: nav;
-}
-header #button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* =============
