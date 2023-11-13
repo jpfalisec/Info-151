@@ -2,6 +2,10 @@
     Navigation
 ============= */
 
+.showMainNav{
+    display: block !important;
+}
+
 a{
     text-decoration: none;
 }
@@ -38,7 +42,7 @@ a{
     color: var(--black);
 }
 
-nav{
+#mainNav{
     // hide the nav on page load
     display: none;
     margin-top: 22px;
