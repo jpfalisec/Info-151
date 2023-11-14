@@ -1,0 +1,1 @@
+var mainNav=document.querySelector("mainNav"),burgerBtn=document.querySelector("#burger-container button");console.log(burgerBtn);var canYouSeeMainNav=!1;function showNav(){console.log("button clicked"),!1===canYouSeeMainNav?mainNav.classList.add("showMainNav"):(mainNav.classList.remove("showMainNav"),canYouSeeMainNav=!1)}burgerBtn.addEventListener("click",showNav);
