@@ -15,6 +15,9 @@ html {
   --white: #ffffff;
   --grey: #74768F;
   --blue: #024A58;
+  --green: #024A58;
+  --lightgreen: #027e97;
+  --red: #ae0a0a;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -374,6 +377,52 @@ button {
   cursor: pointer;
 }
 
+.green-btn {
+  padding: 16px 24px;
+  background-color: var(--green);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.green-btn:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.white-btn {
+  border: 1px solid var(--green);
+  padding: 16px 24px;
+  background-color: var(--white);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  color: var(--green);
+  border-radius: 8px;
+}
+
+.white-btn:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.close-btn {
+  background-color: var(--red);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
 /* =============
     Forms
 ============= */
@@ -518,12 +567,6 @@ header {
     grid-template-columns: 50% auto 4%;
   }
 }
-@media (min-width: 768px) {
-  header {
-    -ms-grid-columns: 50% auto 4%;
-    grid-template-columns: 50% auto 4%;
-  }
-}
 @media (min-width: 1024px) {
   header {
     -ms-grid-columns: 20% auto 4%;
@@ -608,15 +651,15 @@ header #button-container {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 }
 
 /* =============
     signup
 ============= */
-#signup {
-  background-color: var(--blue);
-  height: 50vh;
+#signup-container {
+  background-color: rgba(2, 74, 88, 0.5647058824);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,7 +670,51 @@ header #button-container {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 16px;
-}
-#signup form input {
+  position: fixed;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+form {
+  background-color: rgba(2, 74, 88, 0.5647058824);
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+form #close-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+form #signup-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+form #signup-btn-container button {
+  background-color: var(--lightgreen);
+  color: var(--white);
+  border: 1px solid var(--white);
 }

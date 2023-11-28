@@ -13,10 +13,6 @@ header{
     grid-template-columns: 50% auto 4%;
     }
 
-    @include md{
-        grid-template-columns: 50% auto 4%;
-    }
-
     @include lg{
         grid-template-columns: 20% auto 4%;
     }

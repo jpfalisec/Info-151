@@ -12,13 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 - Step 3 - Desktop/tablet</title>
+    <title>Week 8</title>
 </head>
 
 <body>
 
-    <section id="signup">
-    <form action="#">
+    <section id="signup-container">
+
+        <form action="#">
+            <div id="close-btn-container">
+                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
         <input type="text" placeholder="First Name">
         <input type="text" placeholder="Last Name">
         <input type="text" placeholder="Address">
@@ -26,9 +30,14 @@
         <input type="text" placeholder="Zip Code">
         <input type="text" placeholder="Phone Number">
         <input type="text" placeholder="Email">
-        <button>Send</button>
-        <button>Cancel</button>
-    </form>
+        <div id="signup-btn-container">
+            <button class="white-btn">Send</button>
+            <button class="white-btn">Cancel</button>
+
+            
+        </form></div>
+
+    
 </section>
 
 <header>
@@ -50,8 +59,8 @@
     <li><a href="#">Impact</a></li>
     <li><a href="#">Locations</a></li>
 
-    <li><button class="Sign-btn">Sign In</button></li>
-    <li><button class="SignUp-btn">Sign Up</button></li>
+    <li><button class="green-btn">Sign In</button></li>
+    <li><button class="white-btn">Sign Up</button></li>
     
 </ul>
     </nav>
