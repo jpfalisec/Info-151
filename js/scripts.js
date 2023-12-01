@@ -6,6 +6,9 @@ var mainNav = document.querySelector("#mainNav");
 var signInUpButton = document.querySelector("#sign-in-up-button");
 var burgerBtn = document.querySelector("#burger-container button");
 
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
+
 var canYouSeeMainNav = false;
 
 
@@ -16,11 +19,22 @@ if(canYouSeeMainNav === false){
 
     signInUpButton.classList.add("showSignUp");
     canYouSeeMainNav = true;
+
+    burgerBars.classList.add("hide-burger-bars");
+
+    burgerX.classList.remove("hide-burger-x");
+
 }else{
     console.log("hide menu");
     mainNav.classList.remove("showMainNav");
 
     signInUpButton.classList.remove("showSignUp");
+
+    burgerBars.classList.remove("hide-burger-bars");
+
+    burgerX.classList.add("hide-burger-x");
+
+
     canYouSeeMainNav = false;
 }
 

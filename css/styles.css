@@ -342,12 +342,20 @@ template {
   display: flex !important;
 }
 
+.hide-burger-x {
+  display: none !important;
+}
+
+.hide-burger-bars {
+  display: none !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
 }
 ul li {
-  list-style-type: none;
+  list-style: none;
 }
 
 #validation {
@@ -390,7 +398,6 @@ button {
   transition: 0.25s;
   color: var(--white);
   border-radius: 8px;
-  list-style-type: none;
 }
 
 .green-btn:hover {
@@ -406,7 +413,6 @@ button {
   transition: 0.25s;
   color: var(--green);
   border-radius: 8px;
-  list-style-type: none;
 }
 
 .white-btn:hover {
@@ -603,6 +609,7 @@ header #sign-in-up-button {
   -ms-grid-column-span: 2;
   display: none;
   grid-area: signUp;
+  list-style: none;
   padding: 21px 24px;
 }
 @media (min-width: 768px) {
