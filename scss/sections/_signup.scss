@@ -12,10 +12,12 @@
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
+    //display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+
+    display: none;
 
 
 }
@@ -43,9 +45,10 @@ form{
         border-radius: 8px;
     }
 
-    #signup-btn-container{
+    #sign-up-btn-container{
         display: flex;
         justify-content: flex-end;
+    
 
         button{
             background-color: var(--lightgreen);

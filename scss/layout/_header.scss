@@ -2,54 +2,91 @@
     Header
 ============= */
 header{
-    padding: 12px 24px;
+    
     display: grid;
-    grid-template-columns: 50% auto 8%;
-    grid-template-areas: 
-    "logo button burger"
-    "nav nav nav";
+    grid-template-columns: 50% auto;
+    grid-template-areas:
+    "logo burger"
+    "nav nav"
+    "signUp signUp";
+    height: 100%;
+
 
     @include md{
-    grid-template-columns: 50% auto 4%;
-    }
-
-    @include lg{
-        grid-template-columns: 20% auto 4%;
+    grid-template-columns: 40% 50% auto;
+    grid-template-areas:
+    "logo signUp burger"
+    "nav nav nav";
     }
 
     @include xl{
-    grid-template-columns: 25% 25% auto;
+    grid-template-columns: 25% auto 25%;
     grid-template-areas: 
-    "logo button nav";
-
-    padding: 24px 48px;
+    "logo nav signUp";
     }
     
 
     #logo-container{
+        grid-area: logo;
+        padding: 24px 0 0px 24px;
+        height: 100%;
         display: flex;
         align-items: center;
-        grid-area: logo;
+        box-sizing: border-box;
     }
 
-    #burger-container{
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       grid-area: burger;
-
-       @include xl{
-        display: none;
-       }
-    }
 
     nav{
         grid-area: nav;
+
+        @include xl{
+            display: block;
+        }
         
     }
 
-    #button-container{
-        display: flex;
-        grid-area: button;
+    #sign-in-up-button{
+
+        display: none;
+        grid-area: signUp;
+
+        padding: 21px 24px;
+
+        @include md{
+            display: flex;
+            justify-content: flex-end;
+            padding: 24px 0 0;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        @include xl{
+            padding-right: 24px;
+        }
+        
+    }
+
+    button{
+        margin-left: 24px;
     }
 }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 24px;
+        padding-right: 24px;
+        height: 100%;
+        box-sizing: border-box;
+
+        @include xl{
+        display: none;
+        }
+
+        button{
+            color: var(--black);
+        }
+    }

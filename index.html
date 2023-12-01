@@ -21,7 +21,7 @@
 
         <form action="#">
             <div id="close-btn-container">
-                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
             </div>
         <input type="text" placeholder="First Name">
         <input type="text" placeholder="Last Name">
@@ -36,8 +36,6 @@
 
             
         </form></div>
-
-    
 </section>
 
 <header>
@@ -45,25 +43,26 @@
         <img src="img/logo.svg" alt="logo">
 </section>
 
-    <section id="burger-container">
-        <button>
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        
-    </section>
-    
     <nav id="mainNav">
 <ul>
     <li><a href="#">About Us</a></li>
     <li><a href="#">Projects</a></li>
     <li><a href="#">Impact</a></li>
     <li><a href="#">Locations</a></li>
+    </ul>
+</nav>
 
-    <li><button class="green-btn">Sign In</button></li>
-    <li><button class="white-btn">Sign Up</button></li>
+    <section id="sign-in-up-button">
+        <li><button class="green-btn">Sign In</button></li>
+        <li><button class="white-btn" id="sign-up-btn">Sign Up</button></li>
+    </section>
+
+    <section id="burger-container">
+        <button>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </section>
     
-</ul>
-    </nav>
 </header>
 
 <section id="hero"></section>
