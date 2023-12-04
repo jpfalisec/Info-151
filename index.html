@@ -14,6 +14,7 @@
     <!-- FancyApps -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/styles.css">
@@ -85,19 +86,19 @@
             <h1>Fancybox</h1>
             <ul>
                 <li>
-                    <a href="img/fancy/fancy-1.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-1.jpg" alt=""christmas/></a>
+                    <a href="img/fancy/fancy-1.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-1.jpg" alt="Christmas"/></a>
                 </li>
 
                 <li>
-                    <a href="img/fancy/fancy-2.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt=""christmas/></a>
+                    <a href="img/fancy/fancy-2.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt="Christmas"/></a>
                 </li>
                 
                 <li>
-                    <a href="img/fancy/fancy-3.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-3.jpg" alt=""christmas/></a>
+                    <a href="img/fancy/fancy-3.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-3.jpg" alt="Christmas"/></a>
                 </li>
                 
                 <li>
-                    <a href="img/fancy/fancy-4.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-4.jpg" alt=""christmas/></a>
+                    <a href="img/fancy/fancy-4.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-4.jpg" alt="Christmas"/></a>
                 </li>
                 
             </ul>
@@ -122,9 +123,42 @@
         </div>
     </section>
 
+    <section id="AOS">
+        <div id="aos-grid-item">
+            <h1>aos</h1>
+            <ul data-aos="fade-up">
+                <li>
+                    <a href="img/fancy/fancy-1.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-1.jpg" alt="Christmas" data-aos="flip-left"/></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/fancy-2.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt="Christmas" data-aos="flip-left"/></a>
+                </li>
+                
+                <li>
+                    <a href="img/fancy/fancy-3.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-3.jpg" alt="Christmas" data-aos="flip-left"/></a>
+                </li>
+                
+                <li>
+                    <a href="img/fancy/fancy-4.jpg" data-fancybox=, data-fancybox="gallery-1"><img src="img/fancy/fancy-4.jpg" alt="Christmas" data-aos="flip-left"/></a>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    
+
+    
+
     <!-- FancyBox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 
     <script src="js/scripts-dist.js"></script>
     
